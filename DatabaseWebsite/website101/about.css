@@ -1,0 +1,210 @@
+@import url("https://fonts.google.com/betterspecimen/Dosis/tester");
+@font-face {
+  font-family: myfont;
+  src: url("dosis-variablefont_wght-webfont.woff2") format("woff2"),
+    url("dosis-variablefont_wght-webfont.woff") format("woff"),
+    url("dosis-variablefont_wght-webfont.ttf"),
+    url("dosis-variablefont_wght-webfont.svg#dosis-variablefont_wght")
+      format("svg"),
+    url("dosis-variablefont_wght-webfont.eot"),
+    url("dosis-variablefont_wght-webfont.eot?#iefix")
+      format("embedded-opentype");
+}
+
+body {
+  font-family: myfont, Dosis;
+  margin: 0;
+  color: white;
+  background-color: black;
+}
+* {
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  margin-left: 2px;
+  width: 33%;
+  margin-bottom: 16px;
+  background-color: grey;
+  border-radius: 30px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  display: inline;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover {
+  border: 1px solid white;
+}
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: black;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  background: url("images/ahsan.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card0:hover {
+  background: url("images/ahsan.jpg") right center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2,
+.card0:hover .fa {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("images/ahmed.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card1:hover {
+  background: url("images/ahmed.jpg") center center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2,
+.card1:hover .fa {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("images/ahmad.jpg") left center no-repeat;
+  background-size: 300px;
+}
+
+.card2:hover {
+  background: url("images/ahmad.jpg") center center no-repeat;
+  background-size: 400px;
+}
+
+.card2:hover h2,
+.card2:hover .fa {
+  opacity: 1;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.iconz {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
